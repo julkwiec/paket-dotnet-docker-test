@@ -1,5 +1,4 @@
 Push-Location $PSScriptRoot
-docker build --no-cache .
+$imageId = docker build -q .
 if (-not $?) { exit 1 }
-$lastImage = docker images -q | Select-Object -First 1
-docker run -it $lastImage
+docker run -it $imageId
