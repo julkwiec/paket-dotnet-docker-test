@@ -5,3 +5,4 @@
 - `cd ~/.nuget/packages`
 - `ls | grep [aA]uto`
 Note that there are two folders - `AutoMapper` created by Paket and `automapper` created by dotnet's NuGet client.
+You can check if `dotnet` is using cached package by running `dotnet restore -s /empty`.
