@@ -2,7 +2,6 @@ FROM julkwiec/dotnet-mono-fsharp-paket-powershell:1.0.0
 
 RUN dotnet --version
 
-WORKDIR /emptyfeed
 WORKDIR /nuget
 ENV NUGET_PACKAGES=/nuget NuGetCachePath=/nuget
 RUN dotnet --version
